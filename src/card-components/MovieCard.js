@@ -28,7 +28,12 @@ const posterMap = {
 }
 
 export default class MovieCard extends Component {
-
+  static defaultProps = {
+    title: "Unknown",
+    IMDBRating: null,
+    genres: ['No Genre(s) Found'],
+    poster: 'default'
+  }
   render() {
     return (
       <div className="movie-card">
